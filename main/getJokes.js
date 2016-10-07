@@ -6,13 +6,17 @@ function httpGet(theUrl) {
     return xmlHttp.responseText;
 };
 
-var joke = {
-  "joke":"I'm reading a book about anti-gravity. Its imposible to put down."
-};
+// var joke = {
+//   "joke":"I'm reading a book about anti-gravity. Its imposible to put down."
+// };
+
+function randInt(start, end) {
+  return Math.floor((Math.random() * end) + start);
+}
 
 function newJoke() {
   console.log("newJoke")
-  var joke = httpGet("http://tambal.azurewebsites.net/joke/random")
+  var joke = getJoke();
   //getJoke();
-  document.getElementById("mainJoke").innerHTML = joke.joke;
+  document.getElementById("mainJoke").innerHTML = joke;
 };
