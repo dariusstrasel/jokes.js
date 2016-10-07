@@ -1,6 +1,6 @@
-/** {
+* {
   border: 1px solid red !important;
-}*/
+}
 
 * {
   -webkit-box-sizing: border-box;
@@ -11,4 +11,9 @@
 
 .mainJoke {
   display: inline;
+}
+
+.flex {
+  display: flex;
+  flex: wrap;
 }
