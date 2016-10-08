@@ -19,7 +19,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify- content: center;
+  justify-content: center;
   align-items: stretch;
 }
 
@@ -49,30 +49,40 @@ h1 {
   background-color: #89A8CC;
 }*/
 
-.btn {
+/*.btn {
   max-width: 250px;
-}
+}*/
 
 blockquote {
   margin-left: 20px;
   margin-top: 20px;;
 }
 
+footer {
+  position:absolute;
+  bottom:0;
+  width:100%;
+}
+
 @media all and (max-width: 800px) {
   .flex-parent {
     justify-content: space-around;
-  }
-
-  .flex-child {
-    flex-grow: 1;
-    flex-basis: auto;
   }
 }
 
 @media all and (max-width: 600px) {
   .flex-parent {
-    -webkit-flex-flow: column wrap;
-    flex-flow: column wrap;
-    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    /*flex: 0 0 100%;*/
   }
-}
+
+  .flex-child {
+    height: calc(100% - 100px);
+    display: block;
+    width: 100%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+
+  }
