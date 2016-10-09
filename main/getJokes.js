@@ -14,9 +14,12 @@ function randInt(start, end) {
   return Math.floor((Math.random() * end) + start);
 }
 
+function getJoke() {
+  return jokeObject[randInt(1,Object.keys(jokeObject).length - 1)].joke;
+};
+
 function newJoke() {
-  console.log("newJoke")
-  var joke = getJoke();
-  //getJoke();
-  document.getElementById("mainJoke").innerHTML = joke;
+    var joke = getJoke();
+    console.log(joke)
+    document.getElementById("mainJoke").innerHTML = joke;
 };

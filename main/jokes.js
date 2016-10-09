@@ -96,7 +96,3 @@ var jokeObject = [
       "joke":"At the rate law schools are turning them out, by 2050 there will be more lawyers than humans."
    }
 ];
-
-function getJoke() {
-  return jokeObject[randInt(1,Object.keys(jokeObject).length - 1)].joke;
-};
