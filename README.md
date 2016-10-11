@@ -1,2 +1,2 @@
 # jokes.js
-This web application serves a new joke via a GET API request to "http://tambal.azurewebsites.net/joke/random"
+This web application serves a new joke by pulling a joke from a local JSON object, accessible at "https://dariusstrasel.github.io/jokes.js/"
